@@ -157,7 +157,7 @@ if st.button("Run"):
             st.text("English translation")
             st.write(translate(result, "en", "nl").replace("\n", "  \n"))
  
-st.subheader("Citation:") 
+st.subheader("References:") 
 st.markdown(
     """
 ```    
