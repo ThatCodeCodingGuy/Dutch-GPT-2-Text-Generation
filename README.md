@@ -19,14 +19,14 @@ To make the web app, I used Streamlit to turn the python script into an app. For
 You can check it out and try it out [here](https://huggingface.co/spaces/azizbarank/Dutch-GPT-2-Text-Generator).
 
 #### The Features of the Web Application:
-Aside from the Dutch GPT-2 model, on the left sidebar there are two main additional methods for text generation:
+Aside from the Dutch GPT-2 model, on the left sidebar there are three main additional methods for text generation:
 * Temperature:
 The quality of the text can be controlled manually by this method. 
 Lower rate would result in a more coherent text while the higher one would yield a text that is more diverse. 
 It should not be forgotten that there is a trade-off between coherence and diversity.
 
-* Sampling:
-Sampling can be used in conjunction with temperature mainly to limit the words that may sound too odd for the sentence. It has two main varieties:
+* Top-k and Top-p Sampling:
+These sampling methods can be used in conjunction with temperature mainly to limit the words that may sound too odd for the sentence:
   * Top-k Sampling:
 To do this sampling, a cutoff rate is manually chosen to limit the words.
   * Top-p Sampling (nucleus):
